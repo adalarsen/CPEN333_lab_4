@@ -1,11 +1,11 @@
-cmake_minimum_required(VERSION 3.2)
+cmake_minimum_required(VERSION 3.6)
 project(lab4)
 
 set(CMAKE_CXX_STANDARD 11)
 find_package( Threads REQUIRED )  # Multithreading package required
 
 # add library directory
-include_directories(../library/include)
+include_directories(../CPEN_lib/include)
 
 # copy data files
 FILE(COPY data DESTINATION "${CMAKE_BINARY_DIR}")
